@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Javier Eugenio Mendoza Godani, DWN3A PWA (W2035)</title>
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1>Javier's Weather App</h1>
+    </header>
+    <main>
+      <div class="overflow-hidden p-3 p-md-4 m-md-3 text-center bg-light">
+        <div class="col-xl-6 col-md-10 mx-auto my-4">
+          <h2 class="display-6 fw-normal">Bienvenido a Weather App</h2>
+          <p class="lead fw-normal">Puedes buscar una ciudad y te diremos la temperatura actual junto con otros datos climaticos</p>
+          <input type="text" class="form-control" placeholder="Introduce una ciudad" id="input-ciudad">
+          <div class="invalid-feedback">Por favor ingresar una ciudad válida</div>
+          <button id="btn-buscar" class="btn btn-dark">Buscar</button>
+          <div class="weather-descripcion-result text-white">
+            <div class="info">
+              <p class="display-6 fw-normal"></p>
+              <span class="display-6 fw-normal"></span>
+            </div>
+            <div class="img-info"></div>
+          </div>
+        </div>
+      </div>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden box-temp">
+          <div class="my-3 py-3">
+            <h3>Temperatura</h3>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto descripcion-clima">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">ST: <strong></strong></li>
+              <li class="list-group-item">T. Min: <strong></strong></li>
+              <li class="list-group-item">T. Max: <strong></strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden box-humidity">
+          <div class="my-3 p-3">
+            <h3>Humedad</h3>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto descripcion-clima">
+            <p class="lead"></p>
+          </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden box-pressure">
+          <div class="my-3 p-3">
+            <h3>Presion Atmosferica</h3>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto descripcion-clima">
+            <p class="lead"></p>
+          </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center overflow-hidden box-wind">
+          <div class="my-3 py-3">
+            <h3>Velocidad de viento</h3>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto descripcion-clima">
+            <p class="lead"></p>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-hidden bg-light box-youtube">
+        <div id="youtube-player"></div>
+      </div>
+      <div class="overflow-hidden bg-light box-google-map"></div>
+    </main>
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <small class="d-block mb-3 text-muted">© Javier's Weather App 2021</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/youtube-init.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
